@@ -7,7 +7,7 @@ module.exports = function (app) {
     })
 
 	app.get('/interface', function(req, res){
-		var token = 'iloveyouforver';
+		var token = 'iloveyouforever';
 		var signature = req.query.signature;
 		var timestamp = req.query.timestamp;
 		var echostr = req.query.echostr;
