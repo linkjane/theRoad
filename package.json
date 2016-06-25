@@ -1,0 +1,24 @@
+{
+  "name": "theroad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://root@162.245.223.89:35417/home/git/repo/theroad.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.0"
+  },
+  "dependencies": {
+    "compress": "^0.99.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.7.0"
+  }
+}
