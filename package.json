@@ -19,6 +19,7 @@
   "dependencies": {
     "compress": "^0.99.0",
     "jade": "^1.11.0",
+    "jssha": "^2.1.0",
     "morgan": "^1.7.0"
   }
 }
