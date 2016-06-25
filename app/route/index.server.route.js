@@ -5,6 +5,7 @@ module.exports = function (app) {
         });
         
     })
+
 	app.get('/interface', function(req, res){
 		var token = 'iloveyouforver';
 		var signature = req.query.signature;
@@ -20,10 +21,11 @@ module.exports = function (app) {
 		
 		var original = oriArray.join('');
 		var jsSHA = require('jssha');
-		var shaObj = new jsSHA(original, 'TEXT');
-		console.log(1);
-		var scyptoString = shaObj.getHash('SHA-1', 'HEX');
-		console.log(2);
+		console.log(original)
+		var shaObj = new jsSHA('SHA-1', 'TEXT');
+		shaObj.update(original);
+		var scyptoString = shaObj.getHash('HEX');
+
 		if (signature === scyptoString) {
 			console.log('confirm and send echo back');
 			res.end(echostr);
