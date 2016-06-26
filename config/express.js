@@ -10,8 +10,10 @@ module.exports = function () {
         app.use(compress());
     }
     
+    
     app.set('views', './app/views');
-    app.set('view engine', 'jade');
+    app.set('view engine', 'jade')
+    app.use(express.static('./public'));
     
     require('../app/route/index.server.route')(app);
     return app;
